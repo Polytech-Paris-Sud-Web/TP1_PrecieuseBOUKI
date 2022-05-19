@@ -1,0 +1,35 @@
+{
+  "articles": [
+    {
+      "id": "1",
+      "title": "This my First Article",
+      "content": "Hello World",
+      "author": "Précieuse BOUKI"
+    },
+    {
+      "id": "2",
+      "title": "Angular component",
+      "content": "Angular component looks weird dude :c ",
+      "author": "Précieuse BOUKI"
+    },
+    {
+      "id": "3",
+      "title": "Angular service course Polytech",
+      "content": "I read something about angular service, i will try it soon.",
+      "author": "Précieuse BOUKI"
+    },
+    {
+      "id": "4",
+      "title": "My forth Article",
+      "content": "Hello World",
+      "author": "Précieuse BOUKI"
+    }
+  ],
+  "authors": [
+    {
+      "name": "BOUKI Précieuse",
+      "birthday": "28 Mars 1999",
+      "Status": "Student"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+<!--Ici on modifie dans le template directement les attributs d'articles-->
+<!--<app-article [title]="this.article.title" [customContent]="this.article.content" [authors]="this.article.authors"></app-article>-->
+
+<!--Au lieu de passer chaque attributs on passe un seul article -->
+<!--<app-article [article]="this.article" ></app-article>-->
+
+<!--Pour afficher une liste ( a partir d'un tableau) d'article utilisation de *ngFor-->
+<!--<app-article *ngFor="let article of this.articles" [article]="article" ></app-article>-->
+
+<!--Pour afficher un observable dans angular
+    Il y a la méthode du pipe "|async" (juste après this.article ci dessus)
+    mais ce n'est pas la meilleure méthode car il y a des problème de performance
+    pas grave si c'est rouge en bas ça fonction / c'est dans articles.component qu'il faut bien mettre l'instruction -->
+<!--<app-article *ngFor="let article of this.articles | async" [article]="article" ></app-article>-->
+
+<!-- Remove |async and use subscribe (ne pas écrire du code dans le template) see the file articles.component.ts-->
+<!--<app-article *ngFor="let article of this.articles" [article]="article" ></app-article>-->
+
+<app-article  *ngFor="let article of this.articles" [article]="article" (deletedArticle)="delete($event)"></app-article>
