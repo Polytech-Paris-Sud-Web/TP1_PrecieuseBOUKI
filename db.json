@@ -1,0 +1,70 @@
+{
+  "articles": [
+    {
+      "id": "0",
+      "title": "Le Petit Prince",
+      "content": "Les aventures du Petit Prince commencent sur son astéroïde, nommé astéroïde B612, où un jour pousse une rose. Le Petit Prince devient l'ami de cette rose fragile et belle. Il décide ensuite de visiter d'autres mondes, car il s'ennuyait sur sa petite planète.",
+      "author": "Antoine de Saint-Exupéry"
+    },
+    {
+      "id": "1",
+      "title": "Les Misérables",
+      "content": "En 1815, Jean Valjean est libéré du bagne de Toulon après y avoir purgé une peine de dix-neuf ans : victime d'un destin tragique, initialement condamné à cinq ans de bagne pour avoir volé un pain afin de nourrir sa famille, il voit sa peine prolongée à la suite de plusieurs tentatives d'évasion.",
+      "author": "Victor Hugo"
+    },
+    {
+      "id": "2",
+      "title": "Angular component",
+      "content": "Angular component looks weird dude :c ",
+      "author": "Précieuse BOUKI"
+    },
+    {
+      "id": "3",
+      "title": "Angular service course Polytech",
+      "content": "I read something about angular service, i will try it soon.",
+      "author": "Précieuse BOUKI"
+    },
+    {
+      "id": "4",
+      "title": "My forth Article",
+      "content": "Hello World",
+      "author": "Précieuse BOUKI"
+    },
+    {
+      "title": "L'attaque du Moulin",
+      "content": "Françoise est fiancée avec Dominique, un Belge venu habiter en France, ce qui explique qu'il ne soit pas mobilisé pour la guerre franco-prussienne de 1870. Le jour du mariage, l'armée française fait du moulin sa forteresse pour retarder les Prussiens.",
+      "author": "Zola",
+      "id": "0HpSfZd"
+    },
+    {
+      "title": "Fake Title",
+      "content": "cd",
+      "id": "KhBG27q"
+    },
+    {
+      "title": "dq",
+      "content": "vqfde",
+      "id": "hd2wEPh"
+    },
+    {
+      "title": "VDF",
+      "content": "VFEQVF",
+      "id": "SpciNxR"
+    },
+    {
+      "title": "VDF",
+      "content": "VFEQVF",
+      "id": "Ar2qu93"
+    }
+  ],
+  "authors": [
+    {
+      "name": "BOUKI Précieuse",
+      "biography": "Une étudiante qui s'en sort en informatique ;)"
+    },
+    {
+      "name": "Zola",
+      "biography": "C'est un gars bon"
+    }
+  ]
+}
