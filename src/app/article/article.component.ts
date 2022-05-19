@@ -1,5 +1,7 @@
 import {Component, OnInit,Output, Input, EventEmitter} from '@angular/core';
 import {Article} from "../article.model";
+import { ActivatedRoute } from '@angular/router';
+import { ArticleService } from '../article.service';
 
 @Component({
   selector: 'app-article',
@@ -8,40 +10,25 @@ import {Article} from "../article.model";
 })
 export class ArticleComponent implements OnInit {
 
-  @Input()
-  //article: { title: string, content: string, author: string } | undefined;
-  article?:Article; // on utilise le type décrit dans le fichier article.model.ts pour pouvoir le réutilisier partout après
+  @Input()  
+  article?:Article;
 
   @Output()
-  deletedArticle : EventEmitter<Article> = new EventEmitter(); //evenement
+  deletedArticle : EventEmitter<Article> = new EventEmitter(); 
+
+  constructor(private route: ActivatedRoute, private articleService : ArticleService){
+  }
 
   delete(){
     this.deletedArticle.emit(this.article);
   }
 
   ngOnInit(): void {
-
+    this.route.params.subscribe( params => {
+      if (params && params['id']){
+        this.articleService.getArticle(params['id']).subscribe(value => this.article = value);
+      };
+    })
   }
-
-  /*
-  ----part2----
-  @Input("title") title : string | undefined;
-  @Input("customContent") content : string | undefined;
-  @Input("authors") authors : string | undefined;
-
-  ----part 1----
-  readonly title: string;
-  readonly content: string;
-  readonly authors: string;
-
-  constructor(){
-    this.title = 'First Article';
-    this.content = 'Hello World';
-    this.authors = 'Précieuse BOUKI';
-  }
-   */
-
-
-
 
 }

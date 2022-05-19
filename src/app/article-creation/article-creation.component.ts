@@ -1,7 +1,7 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import { FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { ArticleService } from "../article.service";
-import {Article} from "../article.model";
+import {Article, createArticle} from "../article.model";
 
 @Component({
   selector: 'app-article-creation',
@@ -27,12 +27,13 @@ export class ArticleCreationComponent implements OnInit {
   }
 
   createArticle() {
-    const formModel = this.articleForm.value;
-    const newArticle={
-      title : formModel.title,
-      content : formModel.content,
-      author : formModel.author
-    };
+    const {title, content, author} = this.articleForm.value;
+    const newArticle : createArticle = {
+       title,
+      content,
+      author
+     };
     this.articleService.createArticle(newArticle).subscribe();
+    this.articleService.getArticles();
   }
 }

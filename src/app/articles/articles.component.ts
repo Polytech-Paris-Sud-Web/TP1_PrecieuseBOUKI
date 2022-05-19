@@ -9,15 +9,6 @@ import {Observable, of} from "rxjs";
   styleUrls: ['./articles.component.css']
 })
 export class ArticlesComponent implements OnInit {
-  /* ----liste en dure de quelques articles dans articleS----
-   articles = [
-    {title: 'My First Article', content : 'Hello World', author : 'Précieuse BOUKI'},
-    {title: 'My Second Article', content : 'Hello World', author : 'Précieuse BOUKI'},
-    {title: 'My Third Article', content : 'Hello World', author : 'Précieuse BOUKI'}];*/
-
-  //articles?:Article [] = []; // 1 tableau d'article composé de plusieurs objets de type article
-
-  //articles?:Observable<Article[]> = of([]); // par défaut quand le composant s'instancie il reçoit un tableau
 
   articles?:Article [] ;
   constructor(private articleService: ArticleService) {
