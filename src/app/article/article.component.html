@@ -1,8 +1,0 @@
-<div *ngIf="this.article?.title && this.article?.content && this.article?.author" class="article">
-    <h3> <a [routerLink]="['/articles',this.article?.id]"> {{this.article?.title}}</a> </h3>
-    <p> {{this.article?.content}} </p>
-    <p><a [routerLink]="['/authors',this.article?.author]" >{{this.article?.author}}</a></p>
-
-    <button (click)="delete()"> Delete this article  </button>
-</div>
-
